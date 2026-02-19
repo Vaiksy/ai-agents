@@ -150,8 +150,8 @@ content_intelligence_engine/
 ### Clone the Repository
 
 ```bash
-git clone 
-cd content-intelligence-agent/content_intelligence_engine
+git clone https://github.com/Vaiksy/ai-agents/tree/main/content_intelligence_engine
+cd ai-agents/content_intelligence_engine
 ```
 
 ### Virtual Environment Setup
