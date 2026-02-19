@@ -150,7 +150,7 @@ content_intelligence_engine/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/content-intelligence-agent.git
+git clone 
 cd content-intelligence-agent/content_intelligence_engine
 ```
 
