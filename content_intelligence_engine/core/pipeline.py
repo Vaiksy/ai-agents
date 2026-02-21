@@ -2,7 +2,7 @@
 Pipeline Module – v5.2 (Stable)
 
 Orchestrates the full intelligence pipeline.
-Returns JSON-serializable data with human report.
+Returns JSON-serializable data with human report
 """
 
 import time
@@ -217,7 +217,7 @@ def run_pipeline(
         result["meta"]["gaps_found"] = gap_count
         result["meta"]["total_subdomains"] = len(subdomains)
         
-        # Include research samples (cleaned)
+        # Include research samples(cleaned)
         result["research_samples"] = [{
             "title": r.get("title", ""),
             "snippet": r.get("snippet", "")[:200],
@@ -241,3 +241,4 @@ def run_pipeline(
         result["meta"]["error"] = str(e)
         result["meta"]["elapsed_seconds"] = round(time.time() - start_time, 1)
         raise
+
