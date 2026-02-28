@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 from datetime import datetime
 
-# ========================
+# =======================
 # ALLOWED ROOT DIRECTORIES
 # ========================
 ALLOWED_ROOTS: list[str] = [
@@ -199,3 +199,4 @@ No extra keys.
 No explanation.
 Only valid JSON.
 """
+
