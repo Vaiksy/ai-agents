@@ -68,9 +68,9 @@ class AIProvider(ABC):
         """
         ...
 
-    # ------------------------------------------------------------------
+    # -----------------------------------------------------------------
     # Shared helpers
-    # ------------------------------------------------------------------
+    # -----------------------------------------------------------------
 
     @staticmethod
     def build_prompt(project_data: Dict[str, Any]) -> str:
@@ -103,3 +103,4 @@ class AIProvider(ABC):
         if not isinstance(data["skills"], list):
             raise ValueError("'skills' must be a list")
         return data
+
