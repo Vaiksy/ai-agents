@@ -17,9 +17,9 @@ from typing import Any
 
 from config import LOG_FILE
 
-# ========================
+# =======================
 # LOGGING SETUP
-# ========================
+# =======================
 
 logger = logging.getLogger("ai_assistant")
 logger.setLevel(logging.INFO)
@@ -229,3 +229,4 @@ def _trunc(obj: Any, max_len: int = 200) -> str:
     """Truncate a repr for safe logging."""
     s = str(obj)
     return s[:max_len] + "…" if len(s) > max_len else s
+
