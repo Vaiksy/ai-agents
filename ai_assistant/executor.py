@@ -56,9 +56,9 @@ class ExecutionError(Exception):
 class Executor:
     """Executes validated commands against the Windows OS."""
 
-    # ------------------------------------------------------------------
+    # -----------------------------------------------------------------
     # PUBLIC API
-    # ------------------------------------------------------------------
+    # -----------------------------------------------------------------
 
     def execute(self, command: dict[str, Any]) -> dict[str, Any]:
         """
@@ -229,4 +229,5 @@ def _trunc(obj: Any, max_len: int = 200) -> str:
     """Truncate a repr for safe logging."""
     s = str(obj)
     return s[:max_len] + "…" if len(s) > max_len else s
+
 
