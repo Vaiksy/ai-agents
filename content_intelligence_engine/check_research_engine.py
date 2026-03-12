@@ -26,7 +26,7 @@ def check_file(filepath):
     
     issues = []
     
-    # Check_for model references
+    # Check_for_model references
     patterns = [
         (r'["\']llama3["\']', 'llama3 model reference'),
         (r'["\']phi3:mini["\']', 'phi3:mini model reference'),
@@ -187,4 +187,5 @@ if __name__ == "__main__":
         import traceback
         traceback.print_exc()
         sys.exit(1)
+
 
