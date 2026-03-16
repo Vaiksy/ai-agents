@@ -80,7 +80,7 @@ def run_pipeline(
         if progress_callback:
             progress_callback(message)
     
-    # Validate inputs
+    #  Validate inputs
     for name, val in [("niche", niche), ("platform", platform),
                       ("audience", audience), ("goal", goal)]:
         if not val or not val.strip():
