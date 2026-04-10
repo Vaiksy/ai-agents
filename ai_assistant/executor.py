@@ -17,9 +17,9 @@ from typing import Any
 
 from config import LOG_FILE
 
-# =======================
+# ======================
 # LOGGING SETUP
-# =======================
+# ======================
 
 logger = logging.getLogger("ai_assistant")
 logger.setLevel(logging.INFO)
@@ -56,9 +56,9 @@ class ExecutionError(Exception):
 class Executor:
     """Executes validated commands against the Windows OS."""
 
-    # -----------------------------------------------------------------
+    # ----------------------------------------------------------------
     # PUBLIC API
-    # -----------------------------------------------------------------
+    # ----------------------------------------------------------------
 
     def execute(self, command: dict[str, Any]) -> dict[str, Any]:
         """
